@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Reset",
+    "slug": "reset",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reset.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#B94DF2",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.reset.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFBE8",
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#B94DF2"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "scheme": "reset",
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
